@@ -127,5 +127,31 @@ public class Main {
         // Вывод результатов
         System.out.println("Вес спортзавтрака: " + totalGrams + " грамм");
         System.out.println("Вес спортзавтрака: " + totalKilograms + " кг");
+
+        //задание 7
+
+        // Цель похудения в кг и граммах
+        int targetLossKg = 7;
+        int targetLossGrams = targetLossKg * 1000; // 7000 грамм
+
+        // Минимальная и максимальная потеря веса в день
+        int minDailyLoss = 250; // грамм в день
+        int maxDailyLoss = 500; // грамм в день
+
+        // Расчет дней при минимальной потере веса
+        int daysWithMinLoss = targetLossGrams / minDailyLoss;
+
+        // Расчет дней при максимальной потере веса
+        int daysWithMaxLoss = targetLossGrams / maxDailyLoss;
+
+        // Расчет среднего количества дней
+        int averageDailyLoss = (minDailyLoss + maxDailyLoss) / 2;
+        int averageDays = targetLossGrams / averageDailyLoss;
+
+        // Вывод результатов
+        System.out.println("При потере веса 250 грамм в день потребуется: " + daysWithMinLoss + " дней");
+        System.out.println("При потере веса 500 грамм в день потребуется: " + daysWithMaxLoss + " дней");
+        System.out.println("В среднем потребуется: " + averageDays + " дней");
+        System.out.println("Для похудения на " + targetLossKg + " кг (" + targetLossGrams + " грамм)");
     }
 }
