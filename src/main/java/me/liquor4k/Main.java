@@ -85,5 +85,29 @@ public class Main {
         System.out.println("За 1 сутки машина произвела " + bottlesInOneDay + " штук бутылок");
         System.out.println("За 3 дня машина произвела " + bottlesInThreeDays + " штук бутылок");
         System.out.println("За 1 месяц машина произвела " + bottlesInOneMonth + " штук бутылок");
+
+        //задание 5
+
+        // Общее количество банок краски
+        int totalPaintCans = 120;
+
+        // Расход краски на один класс
+        int whitePaintPerClass = 2;
+        int brownPaintPerClass = 4;
+
+        // Общий расход краски на один класс
+        int totalPaintPerClass = whitePaintPerClass + brownPaintPerClass;
+
+        // Расчет количества классов
+        int numberOfClasses = totalPaintCans / totalPaintPerClass;
+
+        // Расчет количества банок каждой краски
+        int totalWhitePaint = whitePaintPerClass * numberOfClasses;
+        int totalBrownPaint = brownPaintPerClass * numberOfClasses;
+
+        // Вывод результата
+        System.out.println("В школе, где " + numberOfClasses + " классов, нужно " +
+                totalWhitePaint + " банок белой краски и " +
+                totalBrownPaint + " банок коричневой краски");
     }
 }
