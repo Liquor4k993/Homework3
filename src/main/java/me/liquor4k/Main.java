@@ -58,5 +58,32 @@ public class Main {
 
         // Вывод результата
         System.out.println("На каждого ученика рассчитано " + paperPerStudent + " листов бумаги");
+
+        //задание 4
+
+        // Исходные данные
+        int bottlesPer2Minutes = 16;
+        int minutesIn2Minutes = 2;
+
+        // Производительность в минуту
+        int bottlesPerMinute = bottlesPer2Minutes / minutesIn2Minutes;
+
+        // Расчет для разных промежутков времени
+        int twentyMinutes = 20;
+        int oneDay = 24 * 60; // 24 часа * 60 минут
+        int threeDays = 3 * oneDay;
+        int oneMonth = 30 * oneDay; // считаем месяц как 30 дней
+
+        // Расчет количества бутылок
+        int bottlesIn20Minutes = bottlesPerMinute * twentyMinutes;
+        int bottlesInOneDay = bottlesPerMinute * oneDay;
+        int bottlesInThreeDays = bottlesPerMinute * threeDays;
+        int bottlesInOneMonth = bottlesPerMinute * oneMonth;
+
+        // Вывод результатов
+        System.out.println("За 20 минут машина произвела " + bottlesIn20Minutes + " штук бутылок");
+        System.out.println("За 1 сутки машина произвела " + bottlesInOneDay + " штук бутылок");
+        System.out.println("За 3 дня машина произвела " + bottlesInThreeDays + " штук бутылок");
+        System.out.println("За 1 месяц машина произвела " + bottlesInOneMonth + " штук бутылок");
     }
 }
