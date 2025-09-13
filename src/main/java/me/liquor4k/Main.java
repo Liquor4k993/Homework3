@@ -1,6 +1,7 @@
 package me.liquor4k;
 
 //задание 1
+
 public class Main {
     public static void main(String[] args) {
         // Объявление переменных
@@ -38,5 +39,24 @@ public class Main {
         System.out.println("Значение переменной fifthValue с типом short равно " + fifthValue);
         System.out.println("Значение переменной sixthValue с типом int равно " + sixthValue);
         System.out.println("Значение переменной seventhValue с типом byte равно " + seventhValue);
+
+        //задание 3
+
+        // Количество учеников у каждого учителя
+        int ludmilaPavlovnaStudents = 23;
+        int annaSergeevnaStudents = 27;
+        int ekaterinaAndreevnaStudents = 30;
+
+        // Общее количество бумаги
+        int totalPaper = 480;
+
+        // Общее количество учеников
+        int totalStudents = ludmilaPavlovnaStudents + annaSergeevnaStudents + ekaterinaAndreevnaStudents;
+
+        // Расчет количества бумаги на одного ученика
+        int paperPerStudent = totalPaper / totalStudents;
+
+        // Вывод результата
+        System.out.println("На каждого ученика рассчитано " + paperPerStudent + " листов бумаги");
     }
 }
