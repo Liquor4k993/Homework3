@@ -153,5 +153,40 @@ public class Main {
         System.out.println("При потере веса 500 грамм в день потребуется: " + daysWithMaxLoss + " дней");
         System.out.println("В среднем потребуется: " + averageDays + " дней");
         System.out.println("Для похудения на " + targetLossKg + " кг (" + targetLossGrams + " грамм)");
+
+        //задача 8
+
+        // Текущие зарплаты сотрудников
+        int mashasSalary = 67760;
+        int denisSalary = 83690;
+        int kristinasSalary = 76230;
+
+        // Повышение на 10%
+        double increaseRate = 0.10;
+
+        // Расчет новых зарплат
+        int mashasNewSalary = (int) (mashasSalary * (1 + increaseRate));
+        int denisNewSalary = (int) (denisSalary * (1 + increaseRate));
+        int kristinasNewSalary = (int) (kristinasSalary * (1 + increaseRate));
+
+        // Годовой доход до повышения
+        int mashasAnnualOld = mashasSalary * 12;
+        int denisAnnualOld = denisSalary * 12;
+        int kristinasAnnualOld = kristinasSalary * 12;
+
+        // Годовой доход после повышения
+        int mashasAnnualNew = mashasNewSalary * 12;
+        int denisAnnualNew = denisNewSalary * 12;
+        int kristinasAnnualNew = kristinasNewSalary * 12;
+
+        // Разница в годовом доходе
+        int mashasAnnualDiff = mashasAnnualNew - mashasAnnualOld;
+        int denisAnnualDiff = denisAnnualNew - denisAnnualOld;
+        int kristinasAnnualDiff = kristinasAnnualNew - kristinasAnnualOld;
+
+        // Вывод результатов
+        System.out.println("Маша теперь получает " + mashasNewSalary + " рублей. Годовой доход вырос на " + mashasAnnualDiff + " рублей");
+        System.out.println("Денис теперь получает " + denisNewSalary + " рублей. Годовой доход вырос на " + denisAnnualDiff + " рублей");
+        System.out.println("Кристина теперь получает " + kristinasNewSalary + " рублей. Годовой доход вырос на " + kristinasAnnualDiff + " рублей");
     }
 }
