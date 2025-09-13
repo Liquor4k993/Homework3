@@ -109,5 +109,23 @@ public class Main {
         System.out.println("В школе, где " + numberOfClasses + " классов, нужно " +
                 totalWhitePaint + " банок белой краски и " +
                 totalBrownPaint + " банок коричневой краски");
+
+        //задание 6
+
+        // Вес компонентов в граммах
+        int bananaWeight = 5 * 80;          // 5 бананов по 80 грамм = 400 г
+        int milkWeight = 200 * 105 / 100;   // 200 мл молока = 210 г
+        int iceCreamWeight = 2 * 100;       // 2 брикета мороженого = 200 г
+        int eggsWeight = 4 * 70;            // 4 яйца = 280 г
+
+        // Общий вес в граммах
+        int totalGrams = bananaWeight + milkWeight + iceCreamWeight + eggsWeight;
+
+        // Перевод в килограммы
+        double totalKilograms = totalGrams / 1000.0;
+
+        // Вывод результатов
+        System.out.println("Вес спортзавтрака: " + totalGrams + " грамм");
+        System.out.println("Вес спортзавтрака: " + totalKilograms + " кг");
     }
 }
